@@ -1,0 +1,278 @@
+/* Remove default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  background-color: white;
+}
+
+/* Main page container */
+.container {
+  width: 100%;
+  
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  height: 400px;
+  background-color: #a92529;
+  position: relative;
+  border-bottom: 4px solid #777;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+.logo img {
+  height: 135px;
+  width: 180px;
+}
+
+/* Heading section */
+.heading {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.heading h1 {
+  display: inline-block;
+  background-color: yellow;
+  color: green;
+  font-family: cursive;
+  font-size: 38px;
+  font-style: italic;
+  padding: 10px 80px;
+}
+
+.heading h2 {
+  color: white;
+  font-size: 27px;
+  margin-top: 20px;
+}
+
+/* Navigation */
+.navigation {
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation a {
+  color: #000080;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+.navigation a:hover {
+  color: yellow;
+}
+
+/* ================= MAIN ================= */
+
+.main {
+  display: flex;
+  min-height: 450px;
+}
+
+/* Left department menu */
+.sidebar {
+  width: 15%;
+  background-color: white;
+  border-right: 3px solid #777;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.sidebar a {
+  color: #4b3a8f;
+  font-size: 25px;
+  margin: 18px 0;
+  text-decoration: underline;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+/* Main content */
+.content {
+  width: 85%;
+  background-color: #ffa500;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* Book image */
+.book-image {
+  width: 170px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 25px;
+}
+
+/* Welcome message */
+.content h3 {
+  color: blue;
+  font-family: cursive;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
+/* Main quote */
+.content p {
+  color: red;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .heading h1 {
+    font-size: 28px;
+    padding: 8px 30px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+
+  .navigation {
+    position: static;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    border-right: none;
+    border-bottom: 3px solid #777;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+
+  .content {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+
+/* ================= LOGIN PAGE ================= */
+
+.login-content {
+  width: 85%;
+  min-height: 450px;
+  background-color: white;
+
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Login image */
+.login-image {
+  width: 260px;
+  height: 175px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Login heading */
+.login-content h3 {
+  color: purple;
+  font-family: cursive;
+  font-style: italic;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Form */
+.login-content form {
+  width: 400px;
+  margin: auto;
+}
+
+/* Each input row */
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-row label {
+  width: 110px;
+  text-align: right;
+  margin-right: 15px;
+
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+/* Input boxes */
+.form-row input {
+  width: 170px;
+  height: 27px;
+
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+
+  margin-top: 25px;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
+}

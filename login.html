@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login - Online Book Store</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <img src="pictures/GLlogo.jfif" alt="GL Bajaj Logo" />
+        </div>
+
+        <div class="heading">
+          <h1>Online Book Store</h1>
+          <h2>Created &amp; Maintained By MRCET</h2>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+          <a href="index.html">HOME</a>
+          <a href="login.html">LOGIN</a>
+          <a href="register.html">REGISTER</a>
+          <a href="#">CATALOGUE</a>
+        </nav>
+      </header>
+
+      <!-- Main Section -->
+      <div class="main">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+          <a href="cse.html">CSE</a>
+          <a href="ece.html">ECE</a>
+          <a href="eee.html">EEE</a>
+          <a href="mech.html">MECH</a>
+        </aside>
+
+        <!-- Login Content -->
+        <section class="login-content">
+          <img src="pictures/log in.webp" alt="Login" class="login-image" />
+
+          <h3>Enter Login Details:</h3>
+
+          <form>
+            <div class="form-row">
+              <label for="loginId">Login ID:</label>
+              <input
+                type="text"
+                id="loginId"
+                placeholder="Enter your ID here"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your Password"
+              />
+            </div>
+
+            <div class="buttons">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
